@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="trstyle.css">
+<script src="trJS.js" ></script>
+</head>
+<body>
+
+<section id="firstbg">
+  <section class="topnav" id="myTopnav">
+    <a href="index.html">logo</a>
+    <div class="dropdown">
+      <button class="dropbtn">Destinations 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="MUMBAI.html">Mumbai</a>
+        <a href="agra.html">Agra</a>
+        <a href="manali.html">Manali</a>
+        <a href="ladakh.html">Ladakh</a>
+        <a href="goa.html">Goa</a>
+        <a href="jaisalmer.html">Jaisalmer</a>
+        <a href="jodhpur.html">Jodhpur</a>
+        <a href="kashmir.html">Kashmir</a>
+        <a href="rishikesh.html">Rishikesh</a>
+        <a href="spiti.html">Spiti</a>
+        <a href="varanasi.html">Varanasi</a>
+        <a href="nainital.html">Nainital</a>
+        <a href="mysore.html">Mysore</a>
+        <a href="mizoram.html">Mizoram</a>
+        <a href="meghalaya.html">Meghalaya</a>
+        <a href="udaipur.html">Udaipur</a>
+        <a href="sikkim.html">Sikkim</a>
+        <a href="runn of kutch.html">Kutch</a>
+        <a href="kolkata.html">Kolkata</a>
+        <a href="kerala.html">Kerala</a>
+        <a href="jaipur.html">Jaipur</a>
+        <a href="hampi.html">Hampi</a>
+        <a href="darjeeling.html">Darjeeling</a>
+      </div>
+    </div>
+    <a href="#">Collections</a>
+    <a href="#">Register</a>
+    <a href="#">Login</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+  </section>
+  <div class="w3-content w3-section" style="max-width:1200px">
+    <img class="mySlides" src="jaisalmer3.jpg" style="width:100%">
+    <img class="mySlides" src="wp6612900-varanasi-wallpapers.jpg" style="width:100%">
+    <img class="mySlides" src="wp6736670-udaipur-wallpapers.jpg" style="width:100%">
+    <img class="mySlides" src="taj-mahal-3132348__480.jpg" style="width:100%">
+  </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+</section>
+
+<section class="txtcontainer">
+  <p>
+    <strong>MyJourneyPartner</strong> provide you a best service for your trip. We will guide all atrracted places near your location. Make your trip a memorable one by selecting one of our below services and enjoy your trip.
+  </p>
+  <div class="option" >
+    <div class="booktrip">
+       <p><strong>Book a trip</strong> is a facility provided by MyJourneyPartner in which u get a different packages option for your destination. Our service provider manage your whole journey. They will manage your travelling, your staying, and hosting beautiful function to make your trip a memorable one. You can't skip a single places when you are with MyJourneyPartner. </p>
+       <a href="#" class="button">BOOKTRIP</a>
+    </div>
+    <div class="plantrip">
+       <p><strong>Plan a trip</strong> is a facility provided by MyJourneyPartner in which our tripadvisor provide you names of every beautiful places near your location during your whole trip. We will guide you for your trip as per your budget. </p>
+       <a href="#" class="button">PLANTRIP</a>
+    </div>
+  </div>
+</section>
+<section id="mythemes">
+   <div class="bestplaces">
+      <h3>Best Places To Visit In Upcoming Days</h3>
+      <div class="container">
+        <div class="summer">
+           <p>Best Places To Visit In Summer</p>
+        </div>
+        <div class="winter">
+          <p>Best Places To Visit In Winter</p>
+        </div>
+        <div class="monsoon">
+          <p>Best Places To Visit In Monsoon</p>
+        </div>
+      </div>
+   </div>
+   <!-- <div class="bestpackages">
+      <h3>Best Packages</h3>
+   </div> -->
+   <div class="placesbythemes">
+       <h3>Visit Places  By Themes</h3>
+       <div class="scroll">
+         <div class="text"><img src="himachal.jpg" alt="hill station" width="300" height="200">Hill Station</div>
+         <div class="text"><img src="cover-for-Beaches-In-India.jpg" alt="beaches"  width="300" height="200">Beaches</div>
+         <div class="text"><img src="Island.jpg" alt="islands"  width="300" height="200">Islands</div>
+         <div class="text"><img src="honeymoon-places.jpg" alt="romantic"  width="300" height="200">Honeymoon Places</div>
+         <div class="text"><img src="hindu.jpg" alt="Hindu pilgrimage"  width="300" height="200">Religious</div>
+         <div class="text"><img src="adventure.jpg" alt="adventure"  width="300" height="200">Adventure</div>
+         <div class="text"><img src="waterfall.jpeg" alt="Waterfall"  width="300" height="200">Waterfall</div>
+         <div class="text"><img src="historical.jpg" alt="historical"  width="300" height="200">Heritages</div>
+       </div>
+   </div>
+   <div class="Feedback">
+       <h3>Give Your Feedback</h3>
+   </div>
+</section>
+<section id="nextbtn">
+  <a href="destination.html"><button class="button1" style="vertical-align: middle;" ><span>Next</span></button></a>
+</section>
+<section id="footer">
+  <div class="footerupper">
+      <p>Start using MyJourneyPartner today</p>
+  </div>
+  <div class="footersection">
+   <div class="footintro">
+    <h1>MyJourneyPartner</h1>
+    <h2>Explore whole world with MyJourneyPartner.</h2>
+   </div>
+   <div class="footerdesc">
+      <a href="destination.html">Destinations</a>
+      <a href="#">packages</a>
+      <a href="#">Hotels</a>
+      <a href="#">Collections</a>
+      <a href="#">BestPlaces</a>
+    </div>
+    <div class="footerabout">
+      <a href="#">About Us</a>
+      <a href="#">Write For Us</a>
+      <a href="#">Privacy</a>
+      <a href="#">terms</a>
+    </div>
+    <div class="footersocial">
+      <h2>Let's chat!</h2>
+      <a href="#">Address</a><br>
+      <a href="tel: +917905704157">Call me at +917905704157</a><br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+  </div>
+</section>
+</body>
+</html>

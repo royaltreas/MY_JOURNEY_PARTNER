@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="trstyle.css">
+    <script src="trJS.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+  <section id="firstbg"></div>
+    <section class="topnav" id="myTopnav">
+      <a href="index.html">logo</a>
+      <a href="destination.html">Destination</a>
+      <a href="#">Collections</a>
+      <a href="#">Register</a>
+      <a href="#">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
+    </section>
+    <div class="w3-content w3-section" style="max-width:1200px">
+      <img class="mySlides" src="jaisalmer3.jpg" style="width:100%;">
+      <img class="mySlides" src="wp6612900-varanasi-wallpapers.jpg" style="width:100%">
+      <img class="mySlides" src="wp6736670-udaipur-wallpapers.jpg" style="width:100%">
+      <img class="mySlides" src="taj-mahal-3132348__480.jpg" style="width:100%">
+    </div>
+    <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+      </script>
+  </section>
+
+      <section id="footer">
+        <div class="footerupper">
+            <p>Start using MyJourneyPartner today</p>
+        </div>
+        <div class="footersection">
+         <div class="footintro">
+          <h1>MyJourneyPartner</h1>
+          <h2>Explore whole world with MyJourneyPartner.</h2>
+         </div>
+         <div class="footerdesc">
+            <a href="#">Destinations</a>
+            <a href="#">packages</a>
+            <a href="#">Hotels</a>
+            <a href="#">Collections</a>
+            <a href="#">BestPlaces</a>
+          </div>
+          <div class="footerabout">
+            <a href="#">About Us</a>
+            <a href="#">Write For Us</a>
+            <a href="#">Privacy</a>
+            <a href="#">terms</a>
+          </div>
+          <div class="footersocial">
+            <h2>Let's chat!</h2>
+            <a href="#">Address</a><br>
+            <a href="tel: +917905704157">Call me at +917905704157</a><br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
